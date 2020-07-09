@@ -2,8 +2,8 @@ def jose_ring(total_num, key):  # 创建一个函数用于解决约瑟夫环问�
     num_list = list(range(1, total_num + 1))  # 生成一个人数列表
     index = 0
     while list:
-        temp = num_list.pop(0)  # [1,2,3,4,5,6,7,8]
-        index += 1
+        temp = num_list.pop(0)  # 把列表中首元素提取出来
+        index += 1  # 进行报数
         if index == key:
             index = 0
             continue  # 如果 == key,就会执行到continue. continue跳出本次循环，break跳出整个循环
