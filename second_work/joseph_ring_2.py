@@ -24,11 +24,11 @@ def generate_cast():
     return num_lst
 
 
-def joseph_ring(dead_num):  # 创建一个函数用于解决约瑟夫环问题(使用列表),dead_num 为报数的数字
+def joseph_ring(dead_num, start_pos):  # 创建一个函数用于解决约瑟夫环问题(使用列表),dead_num 为报数的数字
     num_list = generate_cast()  # 生成一个人数列表
     index = 0
     while num_list:
-        temp = num_list.pop(0)  # 把列表中首元素提取出来
+        temp = num_list.pop(start_pos % len(num_list))  # 把列表中首元素提取出来
         index += 1  # 进行报数
         if index == dead_num:
             index = 0
@@ -48,5 +48,7 @@ def joseph_ring(dead_num):  # 创建一个函数用于解决约瑟夫环问题(�
 
 
 if __name__ == "__main__":
+    start_pos = int(input("请输入起始位置："))
     dead_num = int(input("请输入死亡数字："))
-    joseph_ring(dead_num)
+    joseph_ring(dead_num, start_pos)
+
