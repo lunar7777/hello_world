@@ -36,19 +36,12 @@ def joseph_ring(dead_num, start_pos):  # 创建一个函数用于解决约瑟夫
         num_list.append(temp)
         if len(num_list) == dead_num - 1:  # 幸存者人数为死亡数字-1
             for j in range(dead_num):  # 将所有幸存者信息输出
-                print(
-                    "幸存者：\n",
-                    num_list[j].name,
-                    "性别：",
-                    num_list[j].sex,
-                    "年龄：",
-                    num_list[j].age,
-                )
-                break
+                return(num_list[j].name,num_list[j].sex,num_list[j].age)
+                
 
 
 if __name__ == "__main__":
-    start_pos = int(input("请输入起始位置："))
-    dead_num = int(input("请输入死亡数字："))
-    joseph_ring(dead_num, start_pos)
-
+    #start_pos = int(input("请输入起始位置："))
+    #dead_num = int(input("请输入死亡数字："))
+    #print(joseph_ring(dead_num, start_pos))
+    assert('白展堂\n' in joseph_ring(3,0))
