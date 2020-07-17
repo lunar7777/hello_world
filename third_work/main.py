@@ -5,7 +5,7 @@ from reader import Reader
 
 if __name__ == "__main__":
     temp = Reader()
-    cast_list_ret = temp.read_txt()  # 从txt读取信息
+    cast_list_ret = temp.read_zip()  # 从txt读取信息
 
     people_list = []
 
