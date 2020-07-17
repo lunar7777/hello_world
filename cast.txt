@@ -1,0 +1,10 @@
+﻿zhao male 1
+qian female 2
+sun male 3
+li female 4
+zhou male 5
+wu female 6
+zheng male 7
+wang female 8
+feng male 9
+chu female 10
