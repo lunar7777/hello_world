@@ -1,20 +1,20 @@
 # Reader用于产生人员信息(二维数组)， 在People类引用Reader的信息生成对象 ，People生成的对象引入到Joseph的person[]
-from reader_cor import *
+from reader import *
 from joseph import Joseph
 from people import People
 
 
 if __name__ == "__main__":
-    total_num= 9
+    total_num = 9
     temp = Readercsv()
     myiter = iter(temp)
     cast_list = []
     for index in range(total_num):
-        element = next(myiter).strip('\n')
-        cast_list.append(element.split(','))
-    print(cast_list)
+        element = next(myiter).strip("\n")
+        cast_list.append(element.split(","))
+    #print(cast_list)
 
-    #cast_list_ret = temp.read()  # 从txt/csv/zip读取信息
+    # cast_list_ret = temp.read()  # 从txt/csv/zip读取信息
 
     people_list = []
 

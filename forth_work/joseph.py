@@ -28,5 +28,5 @@ if __name__ == "__main__":
     myit = iter(test)
     for x in myit:
         print(x)
-    assert (x == 1)  # 测试最终出局号码
+    assert x == 1  # 测试最终出局号码
 

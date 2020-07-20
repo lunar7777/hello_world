@@ -19,6 +19,6 @@ class People(object):  # 创建一个People类，用来定义约瑟夫环内每�
 
 if __name__ == "__main__":
     test = People("xiaoa", "neutral", 10)
-    #assert test.__name == "xiaoa"  # 测试私有变量
+    # assert test.__name == "xiaoa"  # 测试私有变量
     assert test.get_name() == "xiaoa"
 
