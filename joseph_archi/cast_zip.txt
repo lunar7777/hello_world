@@ -1,0 +1,8 @@
+﻿a male 1
+b female 2
+c male 3
+d female 4
+e male 5
+f female 6
+g male 7
+h female 8
